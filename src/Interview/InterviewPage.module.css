@@ -1,0 +1,930 @@
+
+/* =========================================================
+   COMMON PAGE
+========================================================= */
+
+.page {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  padding: 32px 40px;
+  box-sizing: border-box;
+}
+
+.pageTitle {
+  margin: 0;
+
+  color: #111827;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.pageSubtitle {
+  margin: 2px 0 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+/* =========================================================
+   BACK HEADER
+========================================================= */
+
+.backHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.backButton {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  color: #6b7280;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.backButton:hover {
+  background: #f9fafb;
+}
+
+/* =========================================================
+   OVERVIEW OPTIONS
+========================================================= */
+
+.optionList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.optionButton {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  padding: 16px;
+
+  border: 1px solid #f3f4f6;
+  border-radius: 16px;
+
+  background: #ffffff;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.optionButton:hover {
+  border-color: #a5b4fc;
+
+  box-shadow:
+    0 6px 18px rgba(79, 70, 229, 0.08);
+}
+
+.optionIcon {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  font-size: 20px;
+}
+
+.indigo {
+  color: #4f46e5;
+  background: #eef2ff;
+}
+
+.violet {
+  color: #7c3aed;
+  background: #f5f3ff;
+}
+
+.emerald {
+  color: #059669;
+  background: #ecfdf5;
+}
+
+.optionText {
+  flex: 1;
+}
+
+.optionTitle {
+  margin: 0;
+
+  color: #1f2937;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: color 0.2s ease;
+}
+
+.optionButton:hover .optionTitle {
+  color: #4338ca;
+}
+
+.optionDescription {
+  margin: 2px 0 0;
+
+  color: #6b7280;
+
+  font-size: 12px;
+}
+
+.optionArrow {
+  width: 16px;
+  height: 16px;
+
+  flex-shrink: 0;
+
+  color: #d1d5db;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.optionButton:hover .optionArrow {
+  color: #6366f1;
+  transform: translateX(2px);
+}
+
+/* =========================================================
+   RECENT ACTIVITY
+========================================================= */
+
+.sectionTitle {
+  margin: 0 0 12px;
+
+  color: #111827;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.recentCard {
+  overflow: hidden;
+}
+
+.recentItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  padding: 16px;
+}
+
+.recentDetails {
+  flex: 1;
+  min-width: 0;
+}
+
+.recentTitle {
+  margin: 0;
+
+  color: #1f2937;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.recentMeta {
+  margin: 2px 0 0;
+
+  color: #9ca3af;
+
+  font-size: 12px;
+}
+
+.viewAllContainer {
+  padding: 16px;
+
+  text-align: center;
+}
+
+.viewAllButton {
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  color: #4f46e5;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.viewAllButton:hover {
+  text-decoration: underline;
+}
+
+/* =========================================================
+   MOCK EXAM INTRO
+========================================================= */
+
+.examIntroCard {
+  padding: 24px;
+}
+
+.centerContent {
+  text-align: center;
+}
+
+.largeEmoji {
+  display: block;
+
+  font-size: 48px;
+}
+
+.examTitle,
+.interviewTitle {
+  margin: 16px 0 0;
+
+  color: #111827;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.examSubtitle,
+.interviewSubtitle {
+  margin: 8px 0 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+.examStats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 16px;
+
+  margin-top: 24px;
+}
+
+.examStat {
+  padding: 12px;
+
+  background: #eef2ff;
+
+  border-radius: 12px;
+}
+
+.examStatValue {
+  margin: 0;
+
+  color: #4f46e5;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.examStatLabel {
+  margin: 2px 0 0;
+
+  color: #6b7280;
+
+  font-size: 12px;
+}
+
+.fullButton {
+  width: 100%;
+
+  margin-top: 24px;
+
+  justify-content: center;
+}
+
+/* =========================================================
+   EXAM HEADER
+========================================================= */
+
+.examHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.questionCounter {
+  color: #4b5563;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.timer {
+  padding: 4px 12px;
+
+  border-radius: 999px;
+
+  background: #eef2ff;
+
+  color: #4f46e5;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   PROGRESS
+========================================================= */
+
+.progressTrack {
+  height: 8px;
+
+  overflow: hidden;
+
+  border-radius: 999px;
+
+  background: #f3f4f6;
+}
+
+.progressFill {
+  height: 100%;
+
+  border-radius: 999px;
+
+  background: #6366f1;
+
+  transition: width 0.3s ease;
+}
+
+/* =========================================================
+   QUESTION CARD
+========================================================= */
+
+.questionCard {
+  padding: 24px;
+}
+
+.question {
+  margin: 0 0 20px;
+
+  color: #111827;
+
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.answerList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.answerOption {
+  width: 100%;
+
+  padding: 12px 16px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  background: #ffffff;
+
+  color: #374151;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    border-color 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.answerOption:hover {
+  border-color: #818cf8;
+  background: #eef2ff;
+}
+
+.answerLetter {
+  margin-right: 8px;
+
+  font-weight: 700;
+}
+
+.selectedAnswer {
+  border-color: #6366f1;
+
+  background: #eef2ff;
+
+  color: #4338ca;
+}
+
+.correctAnswer {
+  border-color: #34d399;
+
+  background: #ecfdf5;
+
+  color: #047857;
+}
+
+.wrongAnswer {
+  border-color: #f87171;
+
+  background: #fef2f2;
+
+  color: #dc2626;
+}
+
+.questionActions {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 24px;
+}
+
+/* =========================================================
+   MOCK INTERVIEW INTRO
+========================================================= */
+
+.interviewIntroCard {
+  padding: 24px;
+
+  text-align: center;
+}
+
+.topicsBox {
+  margin-top: 20px;
+
+  padding: 16px;
+
+  background: #eef2ff;
+
+  border-radius: 12px;
+
+  text-align: left;
+}
+
+.topicsTitle {
+  margin: 0 0 8px;
+
+  color: #3730a3;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.topicList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.topic {
+  padding: 2px 8px;
+
+  border: 1px solid #c7d2fe;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #4f46e5;
+
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* =========================================================
+   LIVE INTERVIEW
+========================================================= */
+
+.liveBadge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  padding: 4px 12px;
+
+  border-radius: 999px;
+
+  background: #fef2f2;
+
+  color: #ef4444;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.liveDot {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: #ef4444;
+
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* =========================================================
+   AI QUESTION
+========================================================= */
+
+.aiCard {
+  padding: 20px;
+}
+
+.aiQuestion {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.aiAvatar {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 16px;
+
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #7c3aed
+  );
+
+  color: #ffffff;
+
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.aiMessage {
+  flex: 1;
+
+  padding: 16px;
+
+  border-radius: 16px;
+
+  background: #eef2ff;
+}
+
+.aiMessage p {
+  margin: 0;
+
+  color: #1f2937;
+
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* =========================================================
+   USER ANSWER
+========================================================= */
+
+.answerCard {
+  padding: 20px;
+}
+
+.answerLabel {
+  margin: 0 0 8px;
+
+  color: #6b7280;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.answerTextarea {
+  width: 100%;
+  height: 128px;
+
+  box-sizing: border-box;
+
+  padding: 12px;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+
+  color: #374151;
+
+  font-size: 14px;
+
+  resize: none;
+
+  outline: none;
+
+  transition: box-shadow 0.2s ease;
+}
+
+.answerTextarea::placeholder {
+  color: #9ca3af;
+}
+
+.answerTextarea:focus {
+  box-shadow:
+    0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.answerFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 12px;
+}
+
+.voiceButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  color: #4f46e5;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+
+.voiceButton:hover {
+  color: #3730a3;
+}
+
+/* =========================================================
+   FEEDBACK
+========================================================= */
+
+.feedbackScoreCard {
+  padding: 20px;
+
+  text-align: center;
+}
+
+.overallScore {
+  margin: 12px 0 0;
+
+  color: #111827;
+
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.overallSubtitle {
+  margin: 4px 0 0;
+
+  color: #6b7280;
+
+  font-size: 14px;
+}
+
+.feedbackCard {
+  padding: 20px;
+}
+
+.feedbackHeading {
+  margin: 0 0 16px;
+
+  color: #1f2937;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   PERFORMANCE METRICS
+========================================================= */
+
+.metrics {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.metricHeader {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 6px;
+}
+
+.metricLabel {
+  color: #374151;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.metricValue {
+  color: #9ca3af;
+
+  font-size: 12px;
+}
+
+.metricTrack {
+  height: 10px;
+
+  overflow: hidden;
+
+  border-radius: 999px;
+
+  background: #f3f4f6;
+}
+
+.metricFill {
+  height: 100%;
+
+  border-radius: 999px;
+
+  background: linear-gradient(
+    to right,
+    #818cf8,
+    #4f46e5
+  );
+}
+
+.metricFill.violet {
+  background: linear-gradient(
+    to right,
+    #a78bfa,
+    #7c3aed
+  );
+}
+
+.metricFill.blue {
+  background: linear-gradient(
+    to right,
+    #60a5fa,
+    #2563eb
+  );
+}
+
+.metricFill.emerald {
+  background: linear-gradient(
+    to right,
+    #34d399,
+    #059669
+  );
+}
+
+/* =========================================================
+   RECOMMENDATIONS
+========================================================= */
+
+.recommendations {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.recommendation {
+  display: flex;
+  gap: 12px;
+
+  padding: 12px;
+
+  border: 1px solid #e0e7ff;
+  border-radius: 12px;
+
+  background: #eef2ff;
+}
+
+.recommendationIcon {
+  flex-shrink: 0;
+
+  font-size: 16px;
+}
+
+.recommendationText {
+  margin: 0;
+
+  color: #374151;
+
+  font-size: 12px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 640px) {
+  .page {
+    padding: 20px 16px;
+  }
+
+  .optionButton {
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .recentItem {
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .examIntroCard,
+  .interviewIntroCard,
+  .questionCard,
+  .answerCard,
+  .feedbackCard,
+  .feedbackScoreCard {
+    padding: 20px;
+  }
+
+  .examStats {
+    gap: 8px;
+  }
+
+  .aiQuestion {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .examStats {
+    grid-template-columns: 1fr;
+  }
+
+  .examStat {
+    padding: 10px;
+  }
+
+  .answerFooter {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .aiAvatar {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 14px;
+
+    font-size: 16px;
+  }
+
+  .questionActions {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,107 @@
+:root {
+  --page-background: #f8fafc;
+
+  --surface: #ffffff;
+  --surface-soft: #f9fafb;
+  --surface-hover: #f8fafc;
+
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+
+  --border: #e5e7eb;
+  --border-light: #f3f4f6;
+
+  --shadow-sm:
+    0 2px 8px rgba(15, 23, 42, 0.05);
+
+  --shadow-lg:
+    0 20px 50px rgba(15, 23, 42, 0.12);
+}
+
+/* =========================
+   DARK THEME
+========================= */
+
+[data-theme='dark'] {
+  --page-background: #0f172a;
+
+  --surface: #111827;
+  --surface-soft: #172033;
+  --surface-hover: #1e293b;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+
+  --border: #263449;
+  --border-light: #1e293b;
+
+  --shadow-sm:
+    0 2px 8px rgba(0, 0, 0, 0.25);
+
+  --shadow-lg:
+    0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+/* =========================
+   GLOBAL APP THEME
+========================= */
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html {
+  background: var(--page-background);
+}
+
+body {
+  margin: 0;
+
+  background: var(--page-background);
+  color: var(--text-primary);
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+/* Common application surfaces */
+
+[data-theme='dark'] input,
+[data-theme='dark'] textarea,
+[data-theme='dark'] select {
+  background: var(--surface);
+  color: var(--text-primary);
+  border-color: var(--border);
+}
+
+[data-theme='dark'] input::placeholder,
+[data-theme='dark'] textarea::placeholder {
+  color: #64748b;
+}
+
+/* Common cards */
+
+[data-theme='dark'] [class*='card'],
+[data-theme='dark'] [class*='Card'] {
+  border-color: var(--border);
+}
+
+/* Scrollbar */
+
+[data-theme='dark'] ::-webkit-scrollbar {
+  width: 8px;
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+[data-theme='dark'] ::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 999px;
+}
